@@ -1,4 +1,6 @@
-package TableDataBundle::CPAN::Release::Older;
+# no code
+## no critic: TestingAndDebugging::RequireUseStrict
+package TableDataBundle::CPAN::Release::Static::Older;
 
 # AUTHORITY
 # DATE

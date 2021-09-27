@@ -1,6 +1,6 @@
 package ## no critic: Modules::RequireFilenameMatchesPackage
     # hide from PAUSE
-    TableDataRole::CPAN::Release::Static::1995;
+    TableDataRole::CPAN::Release::Static::1996;
 
 use 5.010001;
 use strict;
@@ -13,15 +13,15 @@ around new => sub {
     my $orig = shift;
 
     require File::Basename;
-    my $filename = File::Basename::dirname(__FILE__) . '/../../../../../share/1995.csv';
+    my $filename = File::Basename::dirname(__FILE__) . '/../../../../../share/1996.csv';
     unless (-f $filename) {
         require File::ShareDir;
-        $filename = File::ShareDir::dist_file('TableDataBundle-CPAN-Release-Static-Older', '1995.csv');
+        $filename = File::ShareDir::dist_file('TableDataBundle-CPAN-Release-Static-Older', '1996.csv');
     }
     $orig->(@_, filename=>$filename);
 };
 
-package TableData::CPAN::Release::Static::1995;
+package TableData::CPAN::Release::Static::1996;
 
 use 5.010001;
 use strict;
@@ -34,12 +34,12 @@ use Role::Tiny::With;
 # DIST
 # VERSION
 
-with 'TableDataRole::CPAN::Release::Static::1995';
+with 'TableDataRole::CPAN::Release::Static::1996';
 
 # STATS
 
 1;
-# ABSTRACT: CPAN releases for the year 1995
+# ABSTRACT: CPAN releases for the year 1996
 
 =head1 TABLEDATA NOTES
 
