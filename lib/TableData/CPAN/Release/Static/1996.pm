@@ -43,7 +43,7 @@ with 'TableDataRole::CPAN::Release::Static::1996';
 
 =head1 TABLEDATA NOTES
 
-The data is retrieved from MetaCPAN.
+The data was retrieved from MetaCPAN.
 
-The C<status> column is the status of the release when the row is retrieved from
+The C<status> column is the status of the release when the row was retrieved from
 MetaCPAN. It is probably not current, so do not use it.
